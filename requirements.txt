@@ -1,0 +1,4 @@
+smolagents
+streamlit
+python-dotenv
+huggingface_hub

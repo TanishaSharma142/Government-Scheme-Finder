@@ -1,0 +1,270 @@
+[
+  {
+    "name": "Post Matric Scholarship for Students With Disabilities",
+    "conditions": {
+      "occupation": "student",
+      "min_disability": 40,
+      "max_income": 250000
+    },
+    "benefits": {
+      "maintenance": "₹1600/month",
+      "disability_allowance": "₹4000/year"
+    },
+    "documents": ["Disability Cert", "Income Cert", "UDID Card"]
+  },
+  {
+    "name": "Central Sector Scheme of Scholarship for College and University Students",
+    "conditions": {
+      "occupation": "student",
+      "education_level": ["Bachelors", "Masters"],
+      "percentile_min": 80,
+      "max_income": 450000
+    },
+    "benefits": {
+      "scholarship": "₹10,000 - ₹20,000 per annum"
+    },
+    "documents": ["Class 12 Marksheet", "Income Cert", "Aadhaar"]
+  },
+  {
+    "name": "AICTE Pragati Scholarship for Girls",
+    "conditions": {
+      "gender": "female",
+      "occupation": "student",
+      "education_level": ["Diploma", "Bachelors"],
+      "max_income": 800000
+    },
+    "benefits": {
+      "tuition_fee": "Up to ₹30,000/year",
+      "incidentals": "₹2000/month"
+    },
+    "documents": ["Admission Letter", "Income Cert", "Aadhaar"]
+  },
+  {
+    "name": "Pre-Matric Scholarship for OBC Students (Uttar Pradesh)",
+    "conditions": {
+      "state": "Uttar Pradesh",
+      "category": "OBC",
+      "occupation": "student",
+      "max_income": 200000
+    },
+    "benefits": {
+      "monthly_scholarship": "₹150/month"
+    },
+    "documents": ["UP Domicile", "Caste Cert", "Income Cert"]
+  },
+  {
+    "name": "Devnarayan Pre-Matric Scholarship (Rajasthan)",
+    "conditions": {
+      "state": "Rajasthan",
+      "category": "OBC",
+      "sub_category": ["Banjara", "Gujar", "Raika", "Gadia-Lohar"],
+      "occupation": "student",
+      "max_income": 200000
+    },
+    "benefits": {
+      "scholarship": "₹100/month",
+      "other": "Free Books & Dress"
+    },
+    "documents": ["Rajasthan Domicile", "Caste Cert"]
+  },
+  {
+    "name": "PM Kisan Samman Nidhi",
+    "conditions": {
+      "occupation": "farmer",
+      "land_ownership": true,
+      "max_income": 10000000
+    },
+    "benefits": {
+      "cash_transfer": "₹6000 per year in 3 installments"
+    },
+    "documents": ["Land Papers (Khatauni)", "Aadhaar", "Bank Passbook"]
+  },
+  {
+    "name": "Kisan Credit Card (KCC)",
+    "conditions": {
+      "occupation": ["farmer", "fisherman", "animal_husbandry"],
+      "min_age": 18,
+      "max_age": 75
+    },
+    "benefits": {
+      "credit": "Low interest loans (4%) for agriculture needs"
+    },
+    "documents": ["Identity Proof", "Land Documents"]
+  },
+  {
+    "name": "Rythu Bandhu (Telangana)",
+    "conditions": {
+      "state": "Telangana",
+      "occupation": "farmer",
+      "land_ownership": true
+    },
+    "benefits": {
+      "investment_support": "₹10,000 per acre per year"
+    },
+    "documents": ["Pattadar Passbook", "Aadhaar"]
+  },
+  {
+    "name": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+    "conditions": {
+      "gender": "female",
+      "pregnant_or_lactating": true,
+      "min_age": 19
+    },
+    "benefits": {
+      "cash_incentive": "₹5000 in 3 installments"
+    },
+    "documents": ["MCP Card", "Aadhaar", "Bank Account"]
+  },
+  {
+    "name": "Ladli Behna Yojana (Madhya Pradesh)",
+    "conditions": {
+      "state": "Madhya Pradesh",
+      "gender": "female",
+      "min_age": 23,
+      "max_age": 60,
+      "max_income": 250000,
+      "marital_status": ["married", "widowed", "divorced"]
+    },
+    "benefits": {
+      "monthly_aid": "₹1250 directly to bank account"
+    },
+    "documents": ["Samagra ID", "Aadhaar"]
+  },
+  {
+    "name": "Sukanya Samriddhi Yojana",
+    "conditions": {
+      "gender": "female",
+      "max_age": 10
+    },
+    "benefits": {
+      "savings": "High interest rate (8%+) tax-free savings for girl child"
+    },
+    "documents": ["Birth Certificate", "Parent ID"]
+  },
+  {
+    "name": "Lakhpati Didi Scheme",
+    "conditions": {
+      "gender": "female",
+      "occupation": "self_employed_group"
+    },
+    "benefits": {
+      "training": "Skill training (LED bulb making, drone repair)",
+      "loan": "Interest-free loans"
+    },
+    "documents": ["SHG Membership ID", "Aadhaar"]
+  },
+  {
+    "name": "Indira Gandhi National Disability Pension Scheme (IGNDPS)",
+    "conditions": {
+      "min_disability": 80,
+      "min_age": 18,
+      "bpl_status": true
+    },
+    "benefits": {
+      "monthly_pension": "₹300 - ₹500 (varies by state)"
+    },
+    "documents": ["Disability Certificate (80%+)", "BPL Ration Card", "Bank Passbook"]
+  },
+  {
+    "name": "ADIP Scheme (Aids and Appliances)",
+    "conditions": {
+      "min_disability": 40,
+      "max_income": 20000
+    },
+    "benefits": {
+      "equipment": "Free Wheelchair, Hearing Aid, Crutches, or Tricycle"
+    },
+    "documents": ["Disability Certificate", "Income Certificate", "Aadhaar"]
+  },
+  {
+    "name": "UDID Card (Unique Disability ID)",
+    "conditions": {
+      "min_disability": 40
+    },
+    "benefits": {
+      "identity": "Universal recognition of disability across India",
+      "railway_pass": "Concession in train tickets"
+    },
+    "documents": ["Medical Certificate", "Photo", "Aadhaar"]
+  },
+  {
+    "name": "Antyodaya Anna Yojana (AAY)",
+    "conditions": {
+      "economic_status": "poorest_of_poor",
+      "ration_card": "AAY"
+    },
+    "benefits": {
+      "ration": "35kg food grains/month (₹3/kg rice, ₹2/kg wheat)"
+    },
+    "documents": ["AAY Ration Card", "Aadhaar", "Domicile Certificate"]
+  },
+  {
+    "name": "PM SVANidhi (Street Vendors)",
+    "conditions": {
+      "occupation": "street_vendor",
+      "urban_area": true
+    },
+    "benefits": {
+      "loan": "Collateral-free working capital loan up to ₹10,000"
+    },
+    "documents": ["Vending Certificate", "Identity Proof", "Bank Account"]
+  },
+  {
+    "name": "EWS Reservation Certificate",
+    "conditions": {
+      "category": "General",
+      "max_income": 800000,
+      "land_ownership_check": true
+    },
+    "benefits": {
+      "reservation": "10% quota in government jobs and education"
+    },
+    "documents": ["Income Certificate", "Asset Certificate", "Aadhaar"]
+  },
+  {
+    "name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+    "conditions": {
+      "gender": "female",
+      "min_age": 18,
+      "bpl_status": true
+    },
+    "benefits": {
+      "gas_connection": "Free LPG connection + First Refill + Stove"
+    },
+    "documents": ["BPL Ration Card", "Aadhaar", "Bank Account"]
+  },
+  {
+    "name": "Pradhan Mantri Awas Yojana (PMAY-G)",
+    "conditions": {
+      "housing_status": "homeless",
+      "max_income": 300000
+    },
+    "benefits": {
+      "financial_assistance": "₹1.2 Lakh for house construction"
+    },
+    "documents": ["Aadhaar", "Job Card (MGNREGA)", "Bank Account"]
+  },
+  {
+    "name": "Ayushman Bharat (PM-JAY)",
+    "conditions": {
+      "max_income": 240000,
+      "occupation": ["farmer", "unemployed", "worker", "laborer", "street_vendor"]
+    },
+    "benefits": {
+      "health_cover": "₹5 Lakh per family per year for secondary/tertiary care"
+    },
+    "documents": ["Aadhaar", "Ration Card", "Income Certificate"]
+  },
+  {
+    "name": "Atal Pension Yojana (APY)",
+    "conditions": {
+      "min_age": 18,
+      "max_age": 40,
+      "occupation": ["farmer", "shopkeeper", "driver", "laborer", "private_employee"]
+    },
+    "benefits": {
+      "pension": "Guaranteed pension of ₹1000-₹5000/month after age 60"
+    },
+    "documents": ["Aadhaar", "Savings Bank Account"]
+  }
+]
