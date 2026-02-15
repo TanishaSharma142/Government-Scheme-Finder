@@ -58,7 +58,7 @@ To demonstrate **Developer Tooling** and **Traffic Modification**, this app feat
 ---
 
 ## 📂 Project Structure
-├── app.py             # Main Application (Streamlit + Requestly Logic)
+├── app.py             # Main Application (Streamlit + Requestly Logic) 
 ├── agent.py           # AI Agent Logic & Tools
 ├── schemes.json       # The Knowledge Base (Database)
 ├── requirements.txt   # Dependencies
