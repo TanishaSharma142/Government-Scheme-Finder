@@ -2,7 +2,23 @@
 
 **GovScheme AI** is a smart, empathetic agent designed to bridge the gap between Indian citizens and government benefits. Using **Retrieval-Augmented Generation (RAG)**, it analyzes user profiles (age, income, occupation) against a verified database of schemes to provide accurate, hallucination-free eligibility results.
 
+## 🛑 The Problem Solved
+Navigating the Indian government welfare system is overwhelming.
+* **Fragmentation:** There are hundreds of schemes (Central & State) scattered across different websites.
+* **Complexity:** Eligibility rules involve complex combinations of age, income, caste, and disability status.
+* **Information Gap:** Most citizens, especially in rural areas, are unaware of the benefits they are legally entitled to (e.g., *PM-Kisan*, *Ayushman Bharat*).
 
+## 💡 Why a "Code Agent" is Better than ChatGPT?
+You might ask: *"Why not just use ChatGPT?"*
+
+| Feature | ❌ Standard LLM (ChatGPT/Gemini) | ✅ SLM trained for particular use |
+| :--- | :--- | :--- |
+| **Accuracy** | **Hallucinates.** It often invents schemes or mixes up eligibility criteria (e.g., confusing State vs. Central rules). | **100% Deterministic.** It uses Python logic (`if income < 200000`) to strictly validate eligibility against a verified database. |
+| **Data Freshness** | **Outdated.** Training data has a cutoff; it doesn't know about schemes launched last week. | **Real-Time.** We simply update the local `schemes.json` file, and the agent is instantly updated without re-training. |
+| ** reasoning** | **Probabilistic.** It "guesses" the next word. It struggles with strict math comparisons (e.g., `<` or `>`). | **Logical.** The agent writes and executes actual Python code to compare user data against scheme rules. |
+| **Privacy** | **Cloud-Dependent.** User data (income, caste) is sent to external servers for processing. | **Privacy-First.** The logic runs locally or on a controlled backend; personal PII doesn't need to be stored. |
+
+**In short:** We use the LLM as a *reasoning engine* to understand the user, but we use **Code Tools** to ensure the final answer is factually correct.
 
 ## 🚀 Key Features
 * **🎯 Precision Matching:** Filters schemes based on strict logic (Age, Income, Caste, State) using `smolagents`.
