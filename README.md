@@ -59,19 +59,29 @@ You might ask: *"Why not just use ChatGPT?"*
 ---
 
 ## 🐞 Hackathon Feature: Requestly Integration
-To demonstrate **Developer Tooling** and **Traffic Modification**, this app features a hidden **"Admin Mode"** that is only accessible by injecting a specific query parameter.
 
-### How to Unlock Admin Mode (Demo):
-1.  Install the **[Requestly Browser Extension](https://requestly.com/)**.
-2.  Create a **Query Param Rule**:
-    * **Condition:** URL Contains `localhost:8501`
-    * **Param:** `mode`
-    * **Value:** `admin`
-3.  **Refresh the App.** You will see a **🔴 RED DEBUG BANNER** and a hidden **Analytics Dashboard** appear at the bottom.
+Feature Used: Modify Query Parameters / URL Rules
+Goal: Implement a zero-code "Feature Flag" and production debugging environment.
 
-> **Why this matters:** This allows developers to test "Pro" features or "Debug" states in production environments without changing the codebase.
+🤔 The "Why": The Problem We Faced
+When building GovScheme AI, we needed a way to monitor the AI agent's internal state—like LLM latency, the specific model being called (e.g., our custom Smolified model vs. Zephyr), and server health.
+However, showing this technical data to an average citizen (the end-user) would ruin the simple, accessible UI. We needed a "God Mode" or "Admin Dashboard" for developers to test the live app, but we didn't have the time to build a full authentication system just for a hackathon demo.
 
----
+🛠️ The "How": Our Requestly Solution
+We used Requestly to act as an invisible feature flag system.
+The Rule: We created a Requestly rule that intercepts traffic to our application (localhost:8501 or our deployment URL).
+The Injection: The rule automatically appends a hidden query parameter: ?mode=admin.
+The Logic: Inside our Streamlit application (app.py), we wrote a simple listener:
+Python
+query_params = st.query_params
+if query_params.get("mode") == "admin":
+    # Unlock hidden developer UI
+📍 The "Where": The Impact on the Project
+By simply toggling the Requestly extension ON, the application instantly transforms.
+
+The injected parameter triggers a hidden rendering block in our code, revealing a 🔴 REQUESTLY DEBUG MODE banner and unlocking a secret sidebar dashboard. This dashboard streams live analytics (Model Version, Inference Latency, and Tool Call Status) that are otherwise completely invisible to regular users.
+
+Conclusion: Requestly allowed us to test production-grade debugging and feature toggling without altering our codebase or deploying new environments. It proved that browser-level network modification is an incredibly powerful tool for AI application developers.
 
 ## 📂 Project Structure
 
